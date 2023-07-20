@@ -56,11 +56,10 @@ button{
 }
 
 .btn-edit{
-    color: rgba(170, 170, 170, 0.717);
+    color: rgb(114, 157, 250);
     border-radius: .2em;
 }
 
 .user-info-api {
     padding: .5em;
 }
-
