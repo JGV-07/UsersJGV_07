@@ -1,20 +1,24 @@
 import "./App.css";
-import FormUser from "./components/FormUser";
-import UserCard from "./components/UserCard";
-import useFetch from "./hooks/useFetch";
-import { useEffect, useState } from "react";
+import FormUser from "./components/FormUser"
+import UserCard from "./components/UserCard"
+import useFetch from "./hooks/useFetch"
+import Loader from "./components/Loader"
+import { useEffect, useState } from "react"
 
 function App() {
-  const [updateInfo, setUpdateInfo] = useState();
+  const [updateInfo, setUpdateInfo] = useState()
 
-  const [closeForm, setCloseForm] = useState(true);
+  const [closeForm, setCloseForm] = useState(true)
 
-  const baseUrl = "https://users-crud.academlo.tech";
+  const [isLoading, setIsLoading] = useState(true)
+
+  const baseUrl = "https://users-crud.academlo.tech"
   const [users, getAllUsers, createNewUser, deleteUserById, updateUserById] =
     useFetch(baseUrl, setCloseForm);
 
   useEffect(() => {
     getAllUsers("/users");
+    setIsLoading(false)
   }, []);
 
   const handleOpenForm = () => {
@@ -23,6 +27,7 @@ function App() {
 
   return (
     <div>
+      {isLoading && <Loader />}
       <div className="user__header">
         <h1 className="user__title">Users</h1>
         <button onClick={handleOpenForm} className="formuser__create">

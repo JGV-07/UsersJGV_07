@@ -10,6 +10,7 @@
     margin-top: .5em;
     margin-left: .5em;
     color: rgb(114, 157, 250);
+    
 }
 
 .user__container-info{
@@ -20,17 +21,47 @@
     padding: 1em;
 }
 
-.formuser__create{
-    width: 40%;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: rgb(102, 157, 179);
-    color: white;
-    border-radius: 0.5em;
-    margin-top: 1em;
-    margin-right: .5em;
+.formuser__create {
+  background-color: transparent;
+  border: 1px solid rgba(102, 157, 179);;
+  box-sizing: border-box;
+  color: #00132C;
+  font-size: .8rem;
+  font-weight: 400;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.formuser__create:hover,
+.formuser__create:active {
+  outline: 0;
+}
+
+.formuser__create:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.formuser__create:before {
+  background-color: rgba(114, 157, 250, 0.393);;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.formuser__create:hover:before {
+  background-color: rgba(114, 157, 250, 0.83);
 }
 
 ::-webkit-scrollbar {
@@ -68,3 +99,4 @@
         width: 15%;
     }
 }
+
