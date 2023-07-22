@@ -27,7 +27,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, handleOpenForm }) => {
       {/* MODAL */}
       <div className={`modal-container ${isModalOpen ? "modal-open" : ""}`}>
         <div className="modal-content">
-          <p className="modal-p">Are you sure you want to delete this user {user.name}? </p>
+          <p className="modal-p">Are you sure you want to delete {`${user.first_name} ${user.last_name}`}? </p>
           <div>
             <button className="modal-yes" onClick={handleConfirmDelete}>Yes</button>
             <button className="modal-no" onClick={handleCancelDelete}>No</button>
