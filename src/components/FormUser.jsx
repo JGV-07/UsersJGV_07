@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import "./styles/FormUser.css";
 
@@ -8,11 +7,12 @@ const FormUser = ({
   updateUserById,
   setUpdateInfo,
   closeForm,
-  setCloseForm
+  setCloseForm, 
+  register,
+  handleSubmit,
+  reset
 }) => {
     
-    const { register, reset, handleSubmit } = useForm();
-
   useEffect(() => {
     reset(updateInfo);
   }, [updateInfo]);

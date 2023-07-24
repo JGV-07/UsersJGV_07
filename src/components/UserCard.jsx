@@ -18,8 +18,8 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, handleOpenForm }) => {
   };
 
   const handleUpdate = () => {
-    setUpdateInfo(user);
-    handleOpenForm();
+    handleOpenForm()
+    setUpdateInfo(user)
   };
 
   return (
