@@ -1,10 +1,10 @@
-import "./App.css";
+import "./App.css"
 import FormUser from "./components/FormUser"
 import UserCard from "./components/UserCard"
 import useFetch from "./hooks/useFetch"
 import Loader from "./components/Loader"
 import { useEffect, useState } from "react"
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
 
 function App() {
   const [updateInfo, setUpdateInfo] = useState()
@@ -15,12 +15,12 @@ function App() {
 
   const baseUrl = "https://users-crud.academlo.tech"
   const [users, getAllUsers, createNewUser, deleteUserById, updateUserById] =
-    useFetch(baseUrl, setCloseForm);
+    useFetch(baseUrl, setCloseForm)
 
-  const { register, reset, handleSubmit } = useForm();
+  const { register, reset, handleSubmit } = useForm()
 
   useEffect(() => {
-    getAllUsers("/users");
+    getAllUsers("/users")
     setIsLoading(false)
   }, []);
 
@@ -33,7 +33,7 @@ function App() {
       email: "",
       password: "",
       birthday: "",
-    });
+    })
   }
 
   if(isLoading) {
@@ -70,7 +70,7 @@ function App() {
           ))}
         </div>
       </div>
-    );
+    )
      
   }
 

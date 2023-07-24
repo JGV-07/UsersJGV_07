@@ -14,17 +14,17 @@ const FormUser = ({
 }) => {
     
   useEffect(() => {
-    reset(updateInfo);
-  }, [updateInfo]);
+    reset(updateInfo)
+  }, [updateInfo])
 
   const submit = (data) => {
     if (updateInfo) {
       //update
-      updateUserById("/users", updateInfo.id, data);
-      setUpdateInfo();
+      updateUserById("/users", updateInfo.id, data)
+      setUpdateInfo()
     } else {
       //create
-      createNewUser("/users", data);
+      createNewUser("/users", data)
     }
     reset({
       first_name: "",

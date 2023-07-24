@@ -1,20 +1,20 @@
-import "./styles/UserCard.css";
-import { useState } from "react";
+import "./styles/UserCard.css"
+import { useState } from "react"
 
 const UserCard = ({ user, deleteUserById, setUpdateInfo, handleOpenForm }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleDelete = () => {
-    setIsModalOpen(true);
+    setIsModalOpen(true)
   };
 
   const handleConfirmDelete = () => {
     deleteUserById("/users", user.id);
-    setIsModalOpen(false);
+    setIsModalOpen(false)
   };
 
   const handleCancelDelete = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(false)
   };
 
   const handleUpdate = () => {
@@ -66,7 +66,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, handleOpenForm }) => {
         </footer>
       </article>
     </>
-  );
-};
+  )
+}
 
 export default UserCard;
