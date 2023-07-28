@@ -7,7 +7,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(240, 240, 240);
+    background-color: #13293D;
 }
 
 h1, h2, h3, ul, hr {
@@ -50,7 +50,7 @@ button{
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: rgba(114, 157, 250, 0.83);
+    background: #1B98E0;
     margin: -4px 0 0 -4px;
   }
   .lds-roller div:nth-child(1) {

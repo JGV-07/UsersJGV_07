@@ -3,7 +3,7 @@
     max-width: 300px;
     border-radius: 0.8em;
     border: 2px solid #aaa3;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 6px 12px -2px, rgba(27, 152, 224, 0.3) 0px 3px 7px -3px;
     overflow: hidden;
     transition: transform 200ms ease;
 }
@@ -13,7 +13,7 @@
 }
 
 .user-name{
-    color: rgb(102, 157, 179);
+    color: #E8F1F2;
     text-align: center;
     padding-top: .5em;
 }
@@ -21,7 +21,7 @@
 .user-hr{
     margin-top: .5em;
     margin-bottom: .5em;
-    border-color: #aaa3;
+    border-color: #1B98E0;
 }
 
 .user-container-info{
@@ -40,6 +40,10 @@
     font-weight: 300;
 }
 
+.user-info-api{
+  color: #fffefe
+}
+
 button{
     background-color: transparent;
 }
@@ -51,14 +55,15 @@ button{
 }
 
 .btn-trash{
-    background-color: rgb(114, 157, 250);
+    background-color: #247BA0;
     color: white;
     border-radius: .2em;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .btn-edit{
-    color: rgb(114, 157, 250);
+    color: white;
+    background-color: #247BA0;
     border-radius: .2em;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -92,32 +97,23 @@ button{
   }
   
   .modal-content {
-    background-color: rgba(114, 157, 250, 0.877);
-    color: white;
+    background-color: #1B98E0;
+    color: #495556;
     padding: 1.5em;
     border-radius: 2em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
-/*   .modal-yes,
-  .modal-no{
-    color: #aaa;
-    background-color: white;
-    border-radius: 30%;
-    padding: .3em;
-    margin: auto;
-  } */
-
 .modal-yes,
 .modal-no {
   align-items: center;
   appearance: none;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
+  background-color: #247BA0;
+  border: 1px solid #1B98E0;
   border-radius: .3em;
   box-shadow: none;
   box-sizing: border-box;
-  color: #363636;
+  color: #E8F1F2;
   cursor: pointer;
   display: inline-flex;
   font-size: .8rem;

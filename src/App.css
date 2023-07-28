@@ -9,7 +9,7 @@
     text-align: center;
     margin-top: .5em;
     margin-left: .5em;
-    color: rgb(114, 157, 250);
+    color: #1B98E0;
     
 }
 
@@ -23,9 +23,9 @@
 
 .formuser__create {
   background-color: transparent;
-  border: 1px solid rgba(102, 157, 179);;
+  border: 1px solid #E8F1F2;
   box-sizing: border-box;
-  color: #00132C;
+  color: #C5DFF8;
   font-size: .8rem;
   font-weight: 400;
   padding: 16px 23px;
@@ -49,7 +49,7 @@
 }
 
 .formuser__create:before {
-  background-color: rgba(114, 157, 250, 0.393);;
+  background-color: #1b98e09c;;
   content: "";
   height: calc(100% + 3px);
   position: absolute;
@@ -61,7 +61,7 @@
 }
 
 .formuser__create:hover:before {
-  background-color: rgba(114, 157, 250, 0.83);
+  background-color: #1B98E0;
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +69,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgb(114, 157, 250);
+    background: #E8F1F2;
   }
 
 @media screen and (min-width: 500px ){

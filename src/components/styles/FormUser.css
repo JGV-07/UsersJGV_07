@@ -22,7 +22,7 @@
     max-width: 300px;
     padding: 2em 1.5em 2.5em;
     border-radius: 0.7em;
-    background-color: white;
+    background-color: #1b98e0e4;
     position: relative;
 }
 
@@ -30,7 +30,7 @@
     text-align: center;
     margin-bottom: 0.5em;
     font-weight: 500;
-    color: rgb(114, 157, 250);
+    color: #E8F1F2;
 }
 
 .formuser__group{
@@ -44,12 +44,13 @@
     font-size: 0.9rem;
     font-weight: 300;
     margin-left: 1em;
+    color: #E8F1F2
 }
 
 .formuser__input{
     padding: 0.4em 0.8em;
     border-radius: 0.5em;
-    border: 0.1em solid #aaa;
+    border: 0.1em solid #E8F1F2;
 }
 
 
@@ -62,13 +63,12 @@
     padding-bottom: 0.6em;
     font-size: 1rem;
     font-weight: 400;
-    background-color: rgb(102, 157, 179);
-    color: white;
+    background-color: #247BA0;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(180, 218, 233, 0.62) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(27, 152, 224, 0.3)  0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395A;
+    color: #E8F1F2;
     cursor: pointer;
     display: inline-flex;
     height: 48px;
@@ -104,25 +104,6 @@
     transform: translateY(2px);
   }
 
-
-
-
-/* .formuser__btn{
-    width: 100%;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: rgb(102, 157, 179);
-    color: white;
-    border-radius: 0.5em;
-    margin-top: 1em;
-}
-
-.formuser_btn:hover{
-    filter: brightness(1.2); 
-} */
-
 .formuser_close{
     position: absolute;
     font-size: 1.2rem;
@@ -133,6 +114,6 @@
 }
 
 .formuser__closer:hover{
-    color: red;
+    color: #ffffff;
 }
 
